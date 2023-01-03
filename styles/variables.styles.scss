@@ -1,0 +1,76 @@
+// Fonts (Bellefair Regular & Barlow Condensed Regular)
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+// Colors
+$primary: #FFFFFF;
+$primaryLight: #D0D6F9; 
+$primaryDark: #0B0D17;
+
+// Fonts
+$primaryFont: 'Bellefair', serif;
+$secondaryFont: 'Barlow Condensed', sans-serif;
+
+// Font Sizes & Spaces
+$font-150: 150px;
+$font-100: 100px;
+$font-56: 56px;
+$font-32: 32px;
+$font-28: 28px;
+
+@mixin font-28 {
+    font-size: $font-28;
+    letter-spacing: 4.75;
+}
+
+@mixin font-14 {
+    font-size: 14px;
+    letter-spacing: 2.35;
+}
+
+@mixin font-16 {
+    font-size: 16px;
+    letter-spacing: 2.7;
+}
+
+@mixin heading-1 {
+    font-family: $primaryFont;
+    font-size: $font-150;
+}
+
+@mixin heading-2 {
+    font-family: $primaryFont;
+    font-size: $font-100;
+}
+
+@mixin heading-3 {
+    font-family: $primaryFont;
+    font-size: $font-56;
+}
+
+@mixin heading-4 {
+    font-family: $primaryFont;
+    font-size: $font-32;
+}
+
+@mixin heading-5 {
+    @include font-28;
+    font-family: $secondaryFont;
+}
+
+@mixin subheading-1 {
+    font-family: $primaryFont;
+    font-size: $font-28;
+}
+
+@mixin subheading-2 {
+    @include font-16;
+    font-family: $secondaryFont;
+}
+
+@mixin nav-text {
+    @include font-16;
+    font-family: $secondaryFont;
+}
+
+
+
