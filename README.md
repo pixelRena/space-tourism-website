@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-- WIP
+<img src="./assets/shared/home-screenshot.png">
 
 ### Links
 
