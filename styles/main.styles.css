@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+body {
+  background-color: black;
+  margin: 15px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 body#home {
   background-image: url("../assets/home/background-home-desktop.jpg");
 }
@@ -19,17 +27,115 @@ li {
   list-style: none;
 }
 
-nav {
-  font-size: 16px;
-  letter-spacing: 2.7;
+a {
+  text-decoration: none;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+}
+
+.subheading-1 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-family: "Bellefair", serif;
+}
+
+.text-body {
+  font-size: 18px;
   font-family: "Barlow Condensed", sans-serif;
 }
-nav ul li {
-  display: inline-block;
+
+.barlow {
+  font-family: "Barlow Condensed", sans-serif;
 }
-nav ul li a {
+
+.bellefair {
+  font-family: "Bellefair", serif;
+}
+
+.text-white {
   color: #FFFFFF;
-  text-decoration: none;
+}
+
+.text-faint {
+  color: #D0D6F9;
+}
+
+.text-dark {
+  color: #0B0D17;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+nav .navbar-brand {
+  padding: 0 25px;
+}
+nav .navbar-menu {
+  display: none;
+  float: right;
+  padding: 0 25px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  margin: unset;
+  width: 730px;
+}
+nav ul .navbar-close-button {
+  display: none;
+}
+nav ul img {
+  display: none;
+  margin: 25px 0 70px auto;
+  padding: 0 25px;
+}
+nav ul a {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed", sans-serif;
+  float: right;
+  line-height: 65px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  padding: 8px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+nav ul a.active {
+  border-bottom: 3px solid white;
+}
+nav ul a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.603);
+}
+nav ul a .nav-item-number {
+  font-weight: 700;
+}
+nav ul::before {
+  content: "";
+  position: absolute;
+  right: 90%;
+  width: 70%;
+  height: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 767px) {
@@ -45,8 +151,49 @@ nav ul li a {
   body.technology {
     background-image: url("../assets/technology/background-technology-mobile.jpg");
   }
+  nav .navbar-menu {
+    display: unset;
+  }
+  nav .navbar-box {
+    visibility: hidden;
+  }
+  nav ul {
+    padding-top: 15px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: unset;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60vw;
+  }
+  nav ul img {
+    display: unset;
+  }
+  nav ul .navbar-close-button {
+    display: unset;
+  }
+  nav ul a {
+    line-height: 50px;
+    padding: 0;
+    border-bottom: 0;
+    border-right: 3px solid rgba(0, 0, 0, 0);
+  }
+  nav ul a:hover {
+    border-bottom: unset;
+  }
+  nav ul a.active {
+    border-bottom: 0;
+    border-right: 3px solid white;
+  }
+  nav ul::before {
+    content: none;
+  }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
+  body {
+    margin: 0;
+  }
   body#home {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
@@ -58,5 +205,18 @@ nav ul li a {
   }
   body.technology {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+  nav ul {
+    width: unset;
+    padding: 0 40px 0 40px;
+  }
+  nav ul a {
+    line-height: 75px;
+  }
+  nav ul a .nav-item-number {
+    display: none;
+  }
+  nav ul::before {
+    content: none;
   }
 }/*# sourceMappingURL=main.styles.css.map */

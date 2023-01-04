@@ -1,33 +1,137 @@
 @import 'variables.styles';
 
+body {
+    background-color: black;
+    margin: 15px 0;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 100vh;
+}
+
 body#home { background-image: url("../assets/home/background-home-desktop.jpg"); }
 body.destination { background-image: url("../assets/destination/background-destination-desktop.jpg"); }
 body.crew { background-image: url("../assets/crew/background-crew-desktop.jpg"); }
 body.technology { background-image: url("../assets/technology/background-technology-desktop.jpg"); }
 
 li { list-style: none; }
+a { text-decoration: none; }
+
+.text-upper { text-transform: uppercase; }
+.heading-1 { @include heading-1; }
+.subheading-1 { @include subheading-1; }
+.text-body { @include body-text; }
+
+.barlow { font-family: $secondaryFont; }
+.bellefair { font-family: $primaryFont; }
+
+.text-white { color: $primary; }
+.text-faint { color: $primaryLight; }
+.text-dark { color: $primaryDark; }
+
+.font-light { font-weight: 300; }
 
 nav {
-    @include nav-text;
-    ul li {
-        display: inline-block; 
-        a { 
-            color: $primary;
-            text-decoration: none;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    text-transform: uppercase;
+    .navbar-brand { padding: 0 25px; }
+    .navbar-menu { 
+        display: none; 
+        float: right;
+        padding: 0 25px;
     }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        margin: unset;
+        width: 730px;
+        .navbar-close-button { display: none; }
+        img {
+            display: none; 
+            margin: 25px 0 70px auto;
+            padding: 0 25px;
+        }
+        a { 
+            @include nav-text;
+            float: right;
+            line-height: 65px;
+            border-bottom: 3px solid rgba(0,0,0,0);
+            color: $primary;
+            padding: 8px;
+            font-weight: 300;
+            margin-right: 15px;
+            &.active { border-bottom: 3px solid white; }
+            &:hover { border-bottom: 3px solid rgba(255, 255, 255, 0.603); }
+            .nav-item-number { font-weight: 700; }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: 90%;
+            width: 70%;
+            height: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }   
 }
 
+// Mobile media queries
 @media (max-width: 767px) {
     body#home { background-image: url("../assets/home/background-home-mobile.jpg"); }
     body.destination { background-image: url("../assets/destination/background-destination-mobile.jpg"); }
     body.crew { background-image: url("../assets/crew/background-crew-mobile.jpg"); }
-    body.technology { background-image: url("../assets/technology/background-technology-mobile.jpg"); } 
+    body.technology { background-image: url("../assets/technology/background-technology-mobile.jpg"); }
+
+    nav {
+        .navbar-menu { display: unset; }
+        .navbar-box { visibility: hidden; }
+        ul {
+            padding-top: 15px;
+            position: fixed;
+            flex-direction: column;
+            justify-content: unset;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 60vw;
+            img { display: unset; }
+            .navbar-close-button { display: unset; }
+            a {
+                line-height: 50px;
+                padding: 0;
+                border-bottom: 0;
+                border-right: 3px solid rgba(0,0,0,0);
+                &:hover { border-bottom: unset; }
+                &.active { 
+                    border-bottom: 0;
+                    border-right: 3px solid white;
+                }
+            }
+            &::before { content: none; }
+        }
+    }
 }
 
+// Tablet media queries
 @media (min-width: 767px) and (max-width: 1023px) {
+    body { margin: 0; }
     body#home { background-image: url("../assets/home/background-home-tablet.jpg"); }
     body.destination { background-image: url("../assets/destination/background-destination-tablet.jpg"); }
     body.crew { background-image: url("../assets/crew/background-crew-tablet.jpg"); }
     body.technology { background-image: url("../assets/technology/background-technology-tablet.jpg"); } 
+
+    nav ul {
+        width: unset;
+        padding: 0 40px 0 40px;
+        a {
+            line-height: 75px;
+            .nav-item-number { display: none; }
+        }
+        &::before { content: none; }
+    }
 }
