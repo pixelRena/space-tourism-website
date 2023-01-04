@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+html {
+  min-height: 100%;
+}
+
 body {
   background-color: black;
   margin: 15px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+}
+
+nav ~ * {
+  padding: 150px 150px 0 150px;
 }
 
 body#home {
@@ -31,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .text-upper {
   text-transform: uppercase;
 }
@@ -38,6 +49,11 @@ a {
 .heading-1 {
   font-family: "Bellefair", serif;
   font-size: 150px;
+}
+
+.heading-4 {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
 }
 
 .subheading-1 {
@@ -49,6 +65,7 @@ a {
 .text-body {
   font-size: 18px;
   font-family: "Barlow Condensed", sans-serif;
+  line-height: 32px;
 }
 
 .barlow {
@@ -132,13 +149,16 @@ nav ul a .nav-item-number {
 nav ul::before {
   content: "";
   position: absolute;
-  right: 90%;
+  right: 95%;
   width: 70%;
   height: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 767px) {
+  nav ~ * {
+    padding: 50px;
+  }
   body#home {
     background-image: url("../assets/home/background-home-mobile.jpg");
   }
@@ -178,6 +198,7 @@ nav ul::before {
     padding: 0;
     border-bottom: 0;
     border-right: 3px solid rgba(0, 0, 0, 0);
+    margin: 0;
   }
   nav ul a:hover {
     border-bottom: unset;

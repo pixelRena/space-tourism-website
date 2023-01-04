@@ -1,11 +1,19 @@
 @import 'variables.styles';
 
+html {
+    min-height: 100%;
+}
+
 body {
     background-color: black;
     margin: 15px 0;
     background-repeat: no-repeat; 
     background-size: cover;
-    min-height: 100vh;
+}
+
+// Select everything after nav
+nav ~ * { 
+    padding: 150px 150px 0 150px;
 }
 
 body#home { background-image: url("../assets/home/background-home-desktop.jpg"); }
@@ -15,9 +23,11 @@ body.technology { background-image: url("../assets/technology/background-technol
 
 li { list-style: none; }
 a { text-decoration: none; }
+button { cursor: pointer; }
 
 .text-upper { text-transform: uppercase; }
 .heading-1 { @include heading-1; }
+.heading-4 { @include heading-4; }
 .subheading-1 { @include subheading-1; }
 .text-body { @include body-text; }
 
@@ -72,7 +82,7 @@ nav {
         &::before {
             content: "";
             position: absolute;
-            right: 90%;
+            right: 95%;
             width: 70%;
             height: 40px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -82,6 +92,7 @@ nav {
 
 // Mobile media queries
 @media (max-width: 767px) {
+    nav ~ * { padding: 50px; }
     body#home { background-image: url("../assets/home/background-home-mobile.jpg"); }
     body.destination { background-image: url("../assets/destination/background-destination-mobile.jpg"); }
     body.crew { background-image: url("../assets/crew/background-crew-mobile.jpg"); }
@@ -106,6 +117,7 @@ nav {
                 padding: 0;
                 border-bottom: 0;
                 border-right: 3px solid rgba(0,0,0,0);
+                margin: 0;
                 &:hover { border-bottom: unset; }
                 &.active { 
                     border-bottom: 0;

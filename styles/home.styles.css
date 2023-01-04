@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 55vh;
+}
+.home-container div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.home-container div:first-child span:nth-child(3) {
+  width: 50%;
+  word-break: break-word;
+}
+.home-container .explore-button {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  border: 0;
+  border-radius: 50%;
+  padding: 50px 0;
+  width: 250px;
+  height: 250px;
+}
+.home-container .explore-button:hover {
+  transition: box-shadow 1s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 0 0 50px rgba(255, 246, 246, 0.274);
+}
+
+@media (max-width: 767px) {
+  .home-container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .home-container div:first-child {
+    width: 100%;
+  }
+  .home-container div:first-child span {
+    margin-bottom: 30px;
+  }
+  .home-container div:first-child span:first-child {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .home-container div:first-child span:nth-child(2) {
+    font-family: "Bellefair", serif;
+    font-size: 100px;
+  }
+  .home-container div:first-child span:nth-child(3) {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    letter-spacing: unset;
+    width: unset;
+    word-break: unset;
+  }
+  .home-container .explore-button {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .home-container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container div:first-child {
+    width: 100%;
+  }
+  .home-container div:first-child span {
+    margin-bottom: 30px;
+  }
+  .home-container div:first-child span:first-child {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+  }
+  .home-container div:first-child span:nth-child(2) {
+    font-family: "Bellefair", serif;
+    font-size: 150px;
+  }
+  .home-container div:first-child span:nth-child(3) {
+    letter-spacing: unset;
+    width: unset;
+    word-break: unset;
+  }
+  .home-container .explore-button {
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    width: 200px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=home.styles.css.map */

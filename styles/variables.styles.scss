@@ -76,6 +76,7 @@ $font-18: 18px;
 @mixin body-text {
     font-size: $font-18;
     font-family: $secondaryFont;
+    line-height: 32px;
 }
 
 

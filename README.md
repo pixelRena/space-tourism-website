@@ -40,19 +40,18 @@ Users should be able to:
 ### Built with
 
 - HTML5
-- SASS
+- JavaScript
+- SASS/SCSS
 - Flexbox
 
 ### What I learned
+- The body element can contain classes and id's just as any other element, but I never thought of every adding classes or id's to it, but it is very useful in times of adding background images when each page is different!
 
 ### Continued development
 
 ### Useful resources
 - [Naming Font Sizes](https://css-tricks.com/the-dilemma-of-naming-font-size-variables/)
 - [Naming Colors](https://css-tricks.com/what-do-you-name-color-variables/)
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
@@ -61,3 +60,5 @@ Users should be able to:
 - Twitter - [@pixelRena](https://www.twitter.com/pixelRena)
 
 ## Acknowledgments
+- [SASS]()
+- [Vscode Live Sass Compiler]()
