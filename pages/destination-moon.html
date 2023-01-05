@@ -6,32 +6,64 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <link rel="stylesheet" href="../styles/main.styles.css">
+  <link rel="stylesheet" href="../styles/destination.styles.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="destination">
+  <nav class="navbar-main">
+    <div class="navbar-brand"><img src="../assets/shared/logo.svg" width="45vw"/></div>
+    <div class="navbar-menu" onclick="toggleNavbar('none','visible')"><img src="../assets/shared/icon-hamburger.svg" width="35vw"/></div>
+    <ul class="navbar-box">
+      <img class="navbar-close-button" onclick="toggleNavbar('unset','hidden')" src="../assets/shared/icon-close.svg" width="25px"/>
+      <a href="./index.html"><span class="nav-item-number">00</span> Home</a>
+      <a class="active" href="./destination-moon.html"><span class="nav-item-number">01</span> Destination</a>
+      <a href="./crew-commander.html"><span class="nav-item-number">02</span> Crew</a>
+      <a href="./technology-spaceport.html"><span class="nav-item-number">03</span> Technology</a>
+    </ul>
+  </nav>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <div class="destination-container">
+    <div class="destination-column">
+      <div class="destination-heading heading-5 text-white text-upper barlow">
+        <span class="destination-number">01</span> Pick your destination
+      </div>
+      <div class="destination-image">
+        <img src="../assets/destination/image-moon.png"/>
+      </div>
+    </div>
 
-  01 Pick your destination
+    <div class="destination-column">
+      <nav class="destination-navbar text-upper barlow">
+        <ul>
+          <a class="active" href="./destination-moon.html">Moon</a>
+          <a href="./destination-mars.html">Mars</a>
+          <a href="./destination-europa.html">Europa</a>
+          <a href="./destination-titan.html">Titan</a>
+        </ul>
+      </nav>
 
-  Moon
-  Mars
-  Europa
-  Titan
+      <div class="heading-2 text-white text-upper">Moon</div>
 
-  Moon
+      <div class="destination-text text-body text-faint">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+        regain perspective and come back refreshed. While you’re there, take in some history
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </div>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+      <hr/>
 
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+      <div class="destination-information text-upper">
+        <div class="destination-distance">
+          <div class="destination-distance-title text-faint">Avg. distance</div>
+          <div class="destination-distance-km text-white">384,400 km</div>
+        </div>
+        <div class="destination-travel-time">
+          <div class="destination-travel-time-title text-faint">Est. travel time</div>
+          <div class="destination-travel-time-days text-white">3 days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.scripts.js"></script>
 </body>
 </html>

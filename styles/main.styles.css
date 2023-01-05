@@ -10,7 +10,7 @@ body {
   background-size: cover;
 }
 
-nav ~ * {
+.navbar-main ~ * {
   padding: 150px 150px 0 150px;
 }
 
@@ -51,9 +51,20 @@ button {
   font-size: 150px;
 }
 
+.heading-2 {
+  font-family: "Bellefair", serif;
+  font-size: 100px;
+}
+
 .heading-4 {
   font-family: "Bellefair", serif;
   font-size: 32px;
+}
+
+.heading-5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .subheading-1 {
@@ -92,22 +103,22 @@ button {
   font-weight: 300;
 }
 
-nav {
+.navbar-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
   text-transform: uppercase;
 }
-nav .navbar-brand {
+.navbar-main .navbar-brand {
   padding: 0 25px;
 }
-nav .navbar-menu {
+.navbar-main .navbar-menu {
   display: none;
   float: right;
   padding: 0 25px;
 }
-nav ul {
+.navbar-main ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -117,15 +128,15 @@ nav ul {
   margin: unset;
   width: 730px;
 }
-nav ul .navbar-close-button {
+.navbar-main ul .navbar-close-button {
   display: none;
 }
-nav ul img {
+.navbar-main ul img {
   display: none;
   margin: 25px 0 70px auto;
   padding: 0 25px;
 }
-nav ul a {
+.navbar-main ul a {
   font-size: 16px;
   letter-spacing: 2.7px;
   font-family: "Barlow Condensed", sans-serif;
@@ -137,26 +148,26 @@ nav ul a {
   font-weight: 300;
   margin-right: 15px;
 }
-nav ul a.active {
+.navbar-main ul a.active {
   border-bottom: 3px solid white;
 }
-nav ul a:hover {
+.navbar-main ul a:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.603);
 }
-nav ul a .nav-item-number {
+.navbar-main ul a .nav-item-number {
   font-weight: 700;
 }
-nav ul::before {
+.navbar-main ul::before {
   content: "";
   position: absolute;
   right: 95%;
-  width: 70%;
+  width: 30vw;
   height: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 767px) {
-  nav ~ * {
+  .navbar-main ~ * {
     padding: 50px;
   }
   body#home {
@@ -171,13 +182,13 @@ nav ul::before {
   body.technology {
     background-image: url("../assets/technology/background-technology-mobile.jpg");
   }
-  nav .navbar-menu {
+  .navbar-main .navbar-menu {
     display: unset;
   }
-  nav .navbar-box {
+  .navbar-main .navbar-box {
     visibility: hidden;
   }
-  nav ul {
+  .navbar-main ul {
     padding-top: 15px;
     position: fixed;
     flex-direction: column;
@@ -187,27 +198,27 @@ nav ul::before {
     height: 100%;
     width: 60vw;
   }
-  nav ul img {
+  .navbar-main ul img {
     display: unset;
   }
-  nav ul .navbar-close-button {
+  .navbar-main ul .navbar-close-button {
     display: unset;
   }
-  nav ul a {
+  .navbar-main ul a {
     line-height: 50px;
     padding: 0;
     border-bottom: 0;
     border-right: 3px solid rgba(0, 0, 0, 0);
     margin: 0;
   }
-  nav ul a:hover {
+  .navbar-main ul a:hover {
     border-bottom: unset;
   }
-  nav ul a.active {
+  .navbar-main ul a.active {
     border-bottom: 0;
     border-right: 3px solid white;
   }
-  nav ul::before {
+  .navbar-main ul::before {
     content: none;
   }
 }
@@ -227,17 +238,17 @@ nav ul::before {
   body.technology {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
   }
-  nav ul {
+  .navbar-main ul {
     width: unset;
     padding: 0 40px 0 40px;
   }
-  nav ul a {
+  .navbar-main ul a {
     line-height: 75px;
   }
-  nav ul a .nav-item-number {
+  .navbar-main ul a .nav-item-number {
     display: none;
   }
-  nav ul::before {
+  .navbar-main ul::before {
     content: none;
   }
 }/*# sourceMappingURL=main.styles.css.map */

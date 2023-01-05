@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+.destination-container {
+  display: flex;
+  flex-direction: row;
+}
+.destination-container .destination-column .destination-image {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.destination-container .destination-column .destination-image img {
+  width: 380px;
+}
+.destination-container .destination-column:first-child {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.destination-container .destination-column:last-child {
+  padding: 60px 0 50px;
+  width: 40%;
+}
+.destination-container .destination-navbar ul {
+  padding: 0;
+}
+.destination-container .destination-navbar ul a {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #D0D6F9;
+  padding: 0 10px 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.destination-container .destination-navbar ul a.active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+.destination-container .destination-navbar ul a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+}
+.destination-container hr {
+  margin: 20px 0 20px;
+  opacity: 0.2;
+}
+.destination-container .destination-number {
+  opacity: 0.3;
+  font-weight: 700;
+}
+.destination-container .destination-text {
+  padding: 0 0 45px;
+  font-weight: 300;
+}
+.destination-container .destination-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.destination-container .destination-information .destination-distance-title,
+.destination-container .destination-information .destination-travel-time-title {
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.destination-container .destination-information .destination-distance-km,
+.destination-container .destination-information .destination-travel-time-days {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bellefair", serif;
+  letter-spacing: unset;
+}/*# sourceMappingURL=destination.styles.css.map */

@@ -1,0 +1,70 @@
+@import 'variables.styles';
+
+.destination-container {
+    display: flex;
+    flex-direction: row;
+    .destination-column {
+        .destination-image { 
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            img { width: 380px; }
+        }
+        &:first-child { 
+            display: flex;
+            align-content: space-between;
+            flex-wrap: wrap;
+            width: 60%; 
+        }
+        &:last-child {
+            padding: 60px 0 50px;
+            width: 40%; 
+        }
+    }
+    
+    .destination-navbar ul {
+        padding: 0;
+        a {
+            @include subheading-2;
+            color: $primaryLight;
+            padding: 0 10px 10px;
+            border-bottom: 2px solid rgba(0,0,0,0);
+    
+            &.active { 
+                color: $primary; 
+                border-bottom: 2px solid $primary;
+            }
+            &:hover { border-bottom: 2px solid rgba(255, 255, 255, 0.603); }
+        }
+    }
+    hr { 
+        margin: 20px 0 20px;
+        opacity: 0.2; 
+    }
+    .destination-number {
+        opacity: 0.3;
+        font-weight: 700;
+    }
+    .destination-text { 
+        padding: 0 0 45px; 
+        font-weight: 300;
+    }
+    .destination-information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        .destination-distance-title,
+        .destination-travel-time-title {
+            @include body-text;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+        .destination-distance-km,
+        .destination-travel-time-days {
+            @include heading-5;
+            font-family: $primaryFont;
+            letter-spacing: unset;
+        }
+    }
+}
