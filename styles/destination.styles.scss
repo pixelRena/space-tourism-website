@@ -71,3 +71,108 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .destination-container {
+        flex-direction: column;
+        align-items: center;
+        .destination-column {
+            .destination-image { 
+                padding: 50px 0 5px;
+                width: 100%;
+                img {
+                    width: 60vw;
+                } 
+            }
+           &:first-child,
+           &:last-child {
+            width: 100%;
+           }
+           &:last-child {
+            padding: 15px 0;
+           }
+        }
+
+        .destination-heading { 
+            font-size: 20px; 
+            font-weight: 300;
+            width: 100%;
+            text-align: center;
+        }
+
+        .destination-name { @include heading-3; }
+
+        .destination-navbar,
+        .destination-name,
+        .destination-text { 
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        .destination-information {
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-around;
+            width: unset;
+            div {
+                margin: 5px;
+            }
+        }
+
+        .destination-text {
+            width: 90%; 
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .destination-container {
+        flex-direction: column;
+        align-items: center;
+        .destination-column {
+            .destination-image { 
+                padding: 50px 0 5px;
+                width: 100%;
+                img {
+                    width: 40vw;
+                } 
+            }
+           &:first-child,
+           &:last-child {
+            width: 100%;
+           }
+        }
+
+        hr { 
+            width: 70%; 
+            display: block;
+            margin: 25px auto 30px;
+        }
+
+        .destination-heading { 
+            font-size: 20px; 
+            font-weight: 300;
+        }
+
+        .destination-navbar,
+        .destination-name,
+        .destination-text { 
+            padding: 15px 0;
+            text-align: center; 
+        }
+
+        .destination-information {
+            text-align: center;
+            justify-content: space-around;
+            width: unset;
+        }
+
+        .destination-text {
+            width: 80%; 
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
