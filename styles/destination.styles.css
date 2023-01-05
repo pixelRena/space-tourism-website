@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .destination-container .destination-column .destination-image img {
-  width: 380px;
+  width: 400px;
 }
 .destination-container .destination-column:first-child {
   display: flex;
@@ -28,6 +28,8 @@
   font-size: 16px;
   letter-spacing: 2.7px;
   font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
   color: #D0D6F9;
   padding: 0 10px 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -62,6 +64,7 @@
   font-size: 18px;
   font-family: "Barlow Condensed", sans-serif;
   line-height: 32px;
+  font-size: 12px;
   letter-spacing: 2px;
   font-weight: 300;
 }

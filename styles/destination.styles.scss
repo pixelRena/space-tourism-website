@@ -8,7 +8,7 @@
             width: 90%;
             display: flex;
             justify-content: center;
-            img { width: 380px; }
+            img { width: 400px; }
         }
         &:first-child { 
             display: flex;
@@ -26,6 +26,8 @@
         padding: 0;
         a {
             @include subheading-2;
+            letter-spacing: 2px;
+            font-weight: 300;
             color: $primaryLight;
             padding: 0 10px 10px;
             border-bottom: 2px solid rgba(0,0,0,0);
@@ -57,6 +59,7 @@
         .destination-distance-title,
         .destination-travel-time-title {
             @include body-text;
+            font-size: 12px;
             letter-spacing: 2px;
             font-weight: 300;
         }
