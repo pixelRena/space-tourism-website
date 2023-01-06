@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+.navbar-main ~ * {
+  padding: 120px 150px 0 150px;
+}
+
+.crew-container {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+}
+.crew-container .crew-column * {
+  margin-bottom: 15px;
+}
+.crew-container .crew-column .heading {
+  font-size: 28px;
+}
+.crew-container .crew-column .crew-title {
+  opacity: 0.4;
+  font-size: 32px;
+}
+.crew-container .crew-column .crew-navbar ul {
+  padding: 0;
+}
+.crew-container .crew-column .crew-navbar ul a {
+  display: inline-block;
+  margin: 0 7px;
+  background-color: #D0D6F9;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  opacity: 0.2;
+}
+.crew-container .crew-column .crew-navbar ul a.active {
+  opacity: 1;
+}
+.crew-container .crew-column .crew-navbar ul a:hover {
+  opacity: 0.5;
+}
+.crew-container .crew-column:first-child {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.crew-container .crew-column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+.crew-container .crew-column:last-child .crew-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.crew-container .crew-column:last-child .crew-image img {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .navbar-main ~ * {
+    padding: 50px 50px 0 50px;
+  }
+  .crew-container {
+    height: 80vh;
+    position: unset;
+    flex-direction: column-reverse;
+  }
+  .crew-container .crew-column {
+    position: relative;
+    z-index: -4;
+    flex-direction: column-reverse;
+  }
+  .crew-container .crew-column:first-child {
+    width: 100%;
+    align-content: unset;
+  }
+  .crew-container .crew-column:first-child .heading {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed", sans-serif;
+    order: 1;
+    text-align: center;
+  }
+  .crew-container .crew-column:first-child .crew-information {
+    width: 100%;
+    text-align: center;
+  }
+  .crew-container .crew-column:first-child .crew-information .crew-title {
+    font-size: 18px;
+  }
+  .crew-container .crew-column:first-child .crew-information .crew-name {
+    font-size: 32px;
+  }
+  .crew-container .crew-column:first-child .crew-navbar {
+    width: 100%;
+    text-align: center;
+  }
+  .crew-container .crew-column:first-child .crew-navbar ul a {
+    width: 10px;
+    height: 10px;
+  }
+  .crew-container .crew-column:last-child {
+    order: 0;
+    width: 100%;
+    display: flex;
+  }
+  .crew-container .crew-column:last-child .crew-image img {
+    position: relative;
+    width: 60%;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .crew-container .crew-column:last-child .crew-image::after {
+    content: "";
+    border-top: 1px solid white;
+    opacity: 0.3;
+    height: 15px;
+    display: block;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .navbar-main ~ * {
+    padding: 50px 50px 0 50px;
+  }
+  .crew-container {
+    height: 45vh;
+    position: unset;
+    flex-wrap: wrap;
+  }
+  .crew-container .crew-column * {
+    margin-bottom: 0;
+  }
+  .crew-container .crew-column:first-child {
+    width: 100%;
+    align-content: unset;
+  }
+  .crew-container .crew-column:first-child .crew-information {
+    width: 100%;
+    text-align: center;
+  }
+  .crew-container .crew-column:first-child .crew-information .crew-title {
+    font-size: 28px;
+  }
+  .crew-container .crew-column:first-child .crew-information .crew-body {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .crew-container .crew-column:first-child .crew-navbar {
+    width: 100%;
+    text-align: center;
+  }
+  .crew-container .crew-column:last-child {
+    width: 100%;
+  }
+  .crew-container .crew-column:last-child .crew-image {
+    position: unset;
+  }
+  .crew-container .crew-column:last-child .crew-image img {
+    width: 45%;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}/*# sourceMappingURL=crew.styles.css.map */

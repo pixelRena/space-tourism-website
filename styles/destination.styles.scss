@@ -43,10 +43,6 @@
         margin: 20px 0 20px;
         opacity: 0.2; 
     }
-    .destination-number {
-        opacity: 0.3;
-        font-weight: 700;
-    }
     .destination-text { 
         padding: 0 0 45px; 
         font-weight: 300;
@@ -92,14 +88,7 @@
             padding: 15px 0;
            }
         }
-
-        .destination-heading { 
-            font-size: 20px; 
-            font-weight: 300;
-            width: 100%;
-            text-align: center;
-        }
-
+        
         .destination-name { @include heading-3; }
 
         .destination-navbar,
@@ -151,7 +140,7 @@
             margin: 25px auto 30px;
         }
 
-        .destination-heading { 
+        .heading { 
             font-size: 20px; 
             font-weight: 300;
         }

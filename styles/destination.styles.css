@@ -45,10 +45,6 @@
   margin: 20px 0 20px;
   opacity: 0.2;
 }
-.destination-container .destination-number {
-  opacity: 0.3;
-  font-weight: 700;
-}
 .destination-container .destination-text {
   padding: 0 0 45px;
   font-weight: 300;
@@ -95,12 +91,6 @@
   .destination-container .destination-column:last-child {
     padding: 15px 0;
   }
-  .destination-container .destination-heading {
-    font-size: 20px;
-    font-weight: 300;
-    width: 100%;
-    text-align: center;
-  }
   .destination-container .destination-name {
     font-family: "Bellefair", serif;
     font-size: 56px;
@@ -146,7 +136,7 @@
     display: block;
     margin: 25px auto 30px;
   }
-  .destination-container .destination-heading {
+  .destination-container .heading {
     font-size: 20px;
     font-weight: 300;
   }
@@ -166,4 +156,4 @@
     display: block;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=categories.styles.css.map */
+}/*# sourceMappingURL=destination.styles.css.map */

@@ -56,6 +56,11 @@ button {
   font-size: 100px;
 }
 
+.heading-3 {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+}
+
 .heading-4 {
   font-family: "Bellefair", serif;
   font-size: 32px;
@@ -164,6 +169,17 @@ button {
   width: 30vw;
   height: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.number {
+  opacity: 0.3;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
 }
 
 @media (max-width: 767px) {

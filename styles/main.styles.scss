@@ -28,6 +28,7 @@ button { cursor: pointer; }
 .text-upper { text-transform: uppercase; }
 .heading-1 { @include heading-1; }
 .heading-2 { @include heading-2; }
+.heading-3 { @include heading-3; }
 .heading-4 { @include heading-4; }
 .heading-5 { @include heading-5; }
 .subheading-1 { @include subheading-1; }
@@ -90,6 +91,17 @@ button { cursor: pointer; }
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
     }   
+}
+
+.number {
+    opacity: 0.3;
+    font-weight: 700;
+}
+
+.heading { 
+    font-size: 20px; 
+    font-weight: 300;
+    width: 100%;
 }
 
 // Mobile media queries
