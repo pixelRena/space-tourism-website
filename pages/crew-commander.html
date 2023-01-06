@@ -6,22 +6,51 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
   <link rel="stylesheet" href="../styles/main.styles.css">
+  <link rel="stylesheet" href="../styles/crew.styles.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="crew">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <nav class="navbar-main">
+    <div class="navbar-brand"><img src="../assets/shared/logo.svg" width="45vw"/></div>
+    <div class="navbar-menu" onclick="toggleNavbar('none','visible')"><img src="../assets/shared/icon-hamburger.svg" width="35vw"/></div>
+    <ul class="navbar-box">
+      <img class="navbar-close-button" onclick="toggleNavbar('unset','hidden')" src="../assets/shared/icon-close.svg" width="25px"/>
+      <a href="./index.html"><span class="nav-item-number">00</span> Home</a>
+      <a href="./destination-moon.html"><span class="nav-item-number">01</span> Destination</a>
+      <a class="active" href="./crew-commander.html"><span class="nav-item-number">02</span> Crew</a>
+      <a href="./technology-spaceport.html"><span class="nav-item-number">03</span> Technology</a>
+    </ul>
+  </nav>
 
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+  <div class="crew-container">
+    <div class="crew-column">
+      <div class="heading-5 heading text-white text-upper barlow">
+        <span class="number">02</span> Meet your crew
+      </div>
+      <div class="crew-information">
+        <div class="crew-title text-white text-upper bellefair heading-4"></div>
+        <div class="crew-name text-white text-upper bellefair heading-3"></div>
+        <div class="crew-body text-body text-faint font-light">
+        </div>
+      </div>
+      <nav class="crew-navbar">
+        <ul>
+          <a class="active" href="./crew-commander.html"></a>
+          <a href="./crew-specialist.html"></a>
+          <a href="./crew-pilot.html"></a>
+          <a href="./crew-engineer.html"></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="crew-column">
+      <div class="crew-image">
+        <img src=""/>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.scripts.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/categories.scripts.js"></script>
 </body>
 </html>
