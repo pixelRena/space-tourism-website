@@ -71,8 +71,6 @@
     flex-direction: column-reverse;
   }
   .crew-container .crew-column {
-    position: relative;
-    z-index: -4;
     flex-direction: column-reverse;
   }
   .crew-container .crew-column:first-child {

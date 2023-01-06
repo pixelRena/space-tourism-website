@@ -64,8 +64,6 @@
         flex-direction: column-reverse;
 
         .crew-column {
-            position: relative;
-            z-index: -4;
             flex-direction: column-reverse;
             &:first-child {
                 width: 100%;
