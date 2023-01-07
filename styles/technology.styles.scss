@@ -1,0 +1,49 @@
+@import 'variables.styles';
+
+.technology-container {
+    display: flex;
+    flex-direction: row;
+    .technology-column {
+        display: flex;
+        flex-direction: column;
+        &:last-child { width: 35%; }
+        .technology-row {
+            display: flex;
+            flex-direction: row;
+            &:last-child {
+                margin: 50px 0;
+                .technology-column {
+                    &:first-child { margin-top: -35px; }
+                    &:last-child { 
+                        * { margin-bottom: 10px; }
+                        margin: 0 0 0 50px; 
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .technology-btn-navbar {
+            @include heading-4; 
+            ul { padding: 0; 
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 15px auto;
+                    color: $primary;
+                    background-color: rgba(0,0,0,0);
+                    border-radius: 50%;
+                    border: 1px solid rgba(255,255,255,0.3);
+                    width: 80px;
+                    height: 80px;
+                    &.active { 
+                        border-color: $primary;
+                        background-color: $primary;
+                        color: $primaryDark;
+                    }
+                    &:hover { border-color: $primary; }
+                }
+            }
+        }
+    }
+}

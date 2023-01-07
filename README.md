@@ -52,6 +52,7 @@ Users should be able to:
 ### Useful resources
 - [Naming Font Sizes](https://css-tricks.com/the-dilemma-of-naming-font-size-variables/)
 - [Naming Colors](https://css-tricks.com/what-do-you-name-color-variables/)
+- [Flexbox Cheatsheet](https://darekkay.com/flexbox-cheatsheet/)
 
 ## Author
 

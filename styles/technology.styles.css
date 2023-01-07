@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap");
+.technology-container {
+  display: flex;
+  flex-direction: row;
+}
+.technology-container .technology-column {
+  display: flex;
+  flex-direction: column;
+}
+.technology-container .technology-column:last-child {
+  width: 35%;
+}
+.technology-container .technology-column .technology-row {
+  display: flex;
+  flex-direction: row;
+}
+.technology-container .technology-column .technology-row:last-child {
+  margin: 50px 0;
+}
+.technology-container .technology-column .technology-row:last-child .technology-column:first-child {
+  margin-top: -35px;
+}
+.technology-container .technology-column .technology-row:last-child .technology-column:last-child {
+  margin: 0 0 0 50px;
+  width: 60%;
+}
+.technology-container .technology-column .technology-row:last-child .technology-column:last-child * {
+  margin-bottom: 10px;
+}
+.technology-container .technology-column .technology-btn-navbar {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+}
+.technology-container .technology-column .technology-btn-navbar ul {
+  padding: 0;
+}
+.technology-container .technology-column .technology-btn-navbar ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 80px;
+  height: 80px;
+}
+.technology-container .technology-column .technology-btn-navbar ul a.active {
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+}
+.technology-container .technology-column .technology-btn-navbar ul a:hover {
+  border-color: #FFFFFF;
+}/*# sourceMappingURL=technology.styles.css.map */
