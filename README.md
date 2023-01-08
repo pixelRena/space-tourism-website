@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [WIP](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/space-tourism-multipage-website-93TugThfyQ](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-93TugThfyQ)
 - Live Site URL: [https://pixelrena.github.io/space-tourism-website](https://pixelrena.github.io/space-tourism-website)
 
 ## My process
