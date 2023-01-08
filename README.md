@@ -45,9 +45,10 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
-- The body element can contain classes and id's just as any other element, but I never thought of every adding classes or id's to it, but it is very useful in times of adding background images when each page is different!
+The body element can contain classes and id's just as any other element, but I never thought of every adding classes or id's to it, but it is very useful in times of adding background images when each page is different!
 
 ### Continued development
+I'm thinking of more to add to this website. It could use a loader, but as of now I'm unsure what else to add.
 
 ### Useful resources
 - [Naming Font Sizes](https://css-tricks.com/the-dilemma-of-naming-font-size-variables/)
@@ -61,5 +62,5 @@ Users should be able to:
 - Twitter - [@pixelRena](https://www.twitter.com/pixelRena)
 
 ## Acknowledgments
-- [SASS]()
-- [Vscode Live Sass Compiler]()
+- [SASS](https://sass-lang.com/)
+- [Vscode Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
